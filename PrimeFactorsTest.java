@@ -22,4 +22,12 @@ public class PrimeFactorsTest {
 		result.add(3);
 		assertEquals(result, PrimeFactors.getPrimeFactors(3));
 	}
+	
+	@Test
+	public void test4(){
+		ArrayList<Integer> result = new ArrayList<Integer>();
+		result.add(2);
+		result.add(2);
+		assertEquals(result, PrimeFactors.getPrimeFactors(4));
+	}
 }
