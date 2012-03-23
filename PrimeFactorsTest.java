@@ -5,26 +5,26 @@ import org.junit.Test;
 public class PrimeFactorsTest {
 	
 	@Test
-	public void test1(){
+	public void testPrimeFactors1(){
 		assertEquals(new ArrayList<Integer>(), PrimeFactors.getPrimeFactors(1));
 	}
 	
 	@Test
-	public void test2(){
+	public void testPrimeFactors2(){
 		ArrayList<Integer> result = new ArrayList<Integer>();
 		result.add(2);
 		assertEquals(result, PrimeFactors.getPrimeFactors(2));
 	}
 	
 	@Test
-	public void test3(){
+	public void testPrimeFactors3(){
 		ArrayList<Integer> result = new ArrayList<Integer>();
 		result.add(3);
 		assertEquals(result, PrimeFactors.getPrimeFactors(3));
 	}
 	
 	@Test
-	public void test4(){
+	public void testPrimeFactors4(){
 		ArrayList<Integer> result = new ArrayList<Integer>();
 		result.add(2);
 		result.add(2);
@@ -32,7 +32,7 @@ public class PrimeFactorsTest {
 	}
 	
 	@Test
-	public void test6(){
+	public void testPrimeFactors6(){
 		ArrayList<Integer> result = new ArrayList<Integer>();
 		result.add(2);
 		result.add(3);
@@ -40,7 +40,7 @@ public class PrimeFactorsTest {
 	}
 	
 	@Test
-	public void test8(){
+	public void testPrimeFactors8(){
 		ArrayList<Integer> result = new ArrayList<Integer>();
 		result.add(2);
 		result.add(2);
@@ -49,7 +49,7 @@ public class PrimeFactorsTest {
 	}
 	
 	@Test
-	public void test9(){
+	public void testPrimeFactors9(){
 		ArrayList<Integer> result = new ArrayList<Integer>();
 		result.add(3);
 		result.add(3);
@@ -57,12 +57,18 @@ public class PrimeFactorsTest {
 	}
 	
 	@Test
-	public void test325115(){
+	public void testPrimeFactors325115(){
 		ArrayList<Integer> result = new ArrayList<Integer>();
 		result.add(5);
 		result.add(7);
 		result.add(7);
 		result.add(1327);
 		assertEquals(result, PrimeFactors.getPrimeFactors(325115));
+	}
+	
+	@Test
+	public void testSmallerPrimes2(){
+		ArrayList<Integer> result = new ArrayList<Integer>();
+		assertEquals(result, PrimeFactors.getSmallerPrimes(2));
 	}
 }
