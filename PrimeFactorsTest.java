@@ -71,4 +71,11 @@ public class PrimeFactorsTest {
 		ArrayList<Integer> result = new ArrayList<Integer>();
 		assertEquals(result, PrimeFactors.getSmallerPrimes(2));
 	}
+	
+	@Test
+	public void testSmallerPrimes3(){
+		ArrayList<Integer> result = new ArrayList<Integer>();
+		result.add(2);
+		assertEquals(result, PrimeFactors.getSmallerPrimes(3));
+	}
 }
