@@ -15,4 +15,11 @@ public class PrimeFactorsTest {
 		result.add(2);
 		assertEquals(result, PrimeFactors.getPrimeFactors(2));
 	}
+	
+	@Test
+	public void test3(){
+		ArrayList<Integer> result = new ArrayList<Integer>();
+		result.add(3);
+		assertEquals(result, PrimeFactors.getPrimeFactors(3));
+	}
 }
