@@ -8,4 +8,11 @@ public class PrimeFactorsTest {
 	public void test1(){
 		assertEquals(new ArrayList<Integer>(), PrimeFactors.getPrimeFactors(1));
 	}
+	
+	@Test
+	public void test2(){
+		ArrayList<Integer> result = new ArrayList<Integer>();
+		result.add(2);
+		assertEquals(result, PrimeFactors.getPrimeFactors(2));
+	}
 }
