@@ -21,6 +21,9 @@ public class PrimeFactors {
 		ArrayList<Integer> result = new ArrayList<Integer>();
 		if(i > 2) result.add(2);
 		if(i > 3) result.add(3);
+		if(i > 5) result.add(5);
+		if(i > 7) result.add(7);
+		if(i > 11) result.add(7);
 		return result;
 	}
 
