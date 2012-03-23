@@ -110,4 +110,19 @@ public class PrimeFactorsTest {
 		result.add(19);
 		assertEquals(result, PrimeFactors.getSmallerPrimes(20));
 	}
+	
+	@Test
+	public void testSmallerPrimes100(){
+		ArrayList<Integer> result = new ArrayList<Integer>();
+		result.add(2); result.add(3);  result.add(5);
+		result.add(7); result.add(11); result.add(13);
+		result.add(17); result.add(19); result.add(23);
+		result.add(29); result.add(31); result.add(37);
+		result.add(41); result.add(43); result.add(47);
+		result.add(53); result.add(59); result.add(61);
+		result.add(67); result.add(71); result.add(73);
+		result.add(79); result.add(83); result.add(89);
+		result.add(97);
+		assertEquals(result, PrimeFactors.getSmallerPrimes(100));
+	}
 }
