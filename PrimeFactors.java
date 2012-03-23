@@ -4,7 +4,9 @@ import java.util.ArrayList;
 public class PrimeFactors {
 
 	public static ArrayList<Integer> getPrimeFactors(int i) {
-		return new ArrayList<Integer>();
+		ArrayList<Integer> result = new ArrayList<Integer>();
+		if(i == 2) result.add(2);
+		return result;
 	}
 
 }
