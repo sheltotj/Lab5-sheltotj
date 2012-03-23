@@ -20,6 +20,7 @@ public class PrimeFactors {
 	public static ArrayList<Integer> getSmallerPrimes(int i) {
 		ArrayList<Integer> result = new ArrayList<Integer>();
 		if(i > 2) result.add(2);
+		if(i > 3) result.add(3);
 		return result;
 	}
 
