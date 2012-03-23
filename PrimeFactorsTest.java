@@ -38,4 +38,13 @@ public class PrimeFactorsTest {
 		result.add(3);
 		assertEquals(result, PrimeFactors.getPrimeFactors(6));
 	}
+	
+	@Test
+	public void test8(){
+		ArrayList<Integer> result = new ArrayList<Integer>();
+		result.add(2);
+		result.add(2);
+		result.add(2);
+		assertEquals(result, PrimeFactors.getPrimeFactors(8));
+	}
 }
