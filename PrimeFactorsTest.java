@@ -30,4 +30,12 @@ public class PrimeFactorsTest {
 		result.add(2);
 		assertEquals(result, PrimeFactors.getPrimeFactors(4));
 	}
+	
+	@Test
+	public void test6(){
+		ArrayList<Integer> result = new ArrayList<Integer>();
+		result.add(2);
+		result.add(3);
+		assertEquals(result, PrimeFactors.getPrimeFactors(6));
+	}
 }
