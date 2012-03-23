@@ -47,4 +47,12 @@ public class PrimeFactorsTest {
 		result.add(2);
 		assertEquals(result, PrimeFactors.getPrimeFactors(8));
 	}
+	
+	@Test
+	public void test9(){
+		ArrayList<Integer> result = new ArrayList<Integer>();
+		result.add(3);
+		result.add(3);
+		assertEquals(result, PrimeFactors.getPrimeFactors(9));
+	}
 }
