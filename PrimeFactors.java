@@ -18,7 +18,9 @@ public class PrimeFactors {
 	}
 
 	public static ArrayList<Integer> getSmallerPrimes(int i) {
-		return new ArrayList<Integer>();
+		ArrayList<Integer> result = new ArrayList<Integer>();
+		if(i > 2) result.add(2);
+		return result;
 	}
 
 }
